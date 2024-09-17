@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary: #16325B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+header span {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin: 4px;
+}
+
+header .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: white;
+}
+
+header .title h1 {
+  font-size: 24px;
+}
+
+header .title p {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+header .menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .menu a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  padding: 2px;
+}
+
+header .menu a:hover {
+  color: var(--primary);
+  font-weight: bold;
+  background-color: white;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.soal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.input input {
+  width: 80%;
+  outline: none;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.output {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.output input {
+  width: 80%;
+  outline: none;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.output button {
+  width: 80%;
+  padding: 4px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--primary);
+  outline: none;
+  border-radius: 2px;
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.operator {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.operator span {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  margin: 4px;
+}
+
+.operator p {
+  font-size: 20px;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.all-solusi-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+
+.solusi {
+  width: 80%;
+  border: 2px solid #16325B;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+}
+
+.solusi p {
+  padding: 8px;
+  font-weight: bold;
+  color: #16325B;
+  font-size: 10px;
+}
+
+.solusi span {
+  width: 100%;
+  height: 2px;
+  background-color: #16325B;
+}
+
+.solusi-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  padding: 12px;
+}
+
+.input-wrapper {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.input-wrapper input {
+  text-align: center;
+  outline: none;
+  border: 1px solid #16325B;
+  padding: 2px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #16325B;
+}
+
+
+@media screen and (min-width: 724px) {
+  header {
+    flex-direction: row;
+  }
+
+  header span {
+    display: none;
+  }
+
+  header .title {
+    width: 40%;
+  }
+
+  header .title h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  header .title p {
+    font-size: 12px;
+  }
+
+  header .menu {
+    width: 60%;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  header .menu a {
+    font-size: 16px;
+  }
+
+  .input input{
+    font-size: 36px;
+  }
+  .output input{
+    font-size: 36px;
+  }
+  .output button {
+    font-size: 18px;
+  }
+
+  .solusi p {
+    font-size: 16px;
+  }
+
+  .input-wrapper input {
+    font-size: 20px;
+  }
+}

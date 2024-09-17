@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptarithm Solver by Rizzz.Dev</title>
+    <link rel="stylesheet" href="/assets/styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <a class="title" href="/">
+        <h1>Cryptarithm Solver</h1>
+        <p>created by rizzz.dev</p>
+      </a>
+      <span></span>
+      <div class="menu">
+        <a href="/">Halaman Utama</a>
+        <a href="/pages/penjelasan.html">Penjelasan</a>
+      </div>
+      <span></span>
+    </header>
+
+    <main>
+      <div class="soal">
+        <div class="input">
+          <input type="text" id="input-1" placeholder="INPUT 1" />
+          <input type="text" id="input-2" placeholder="INPUT 2" />
+        </div>
+        <div class="operator">
+          <span></span>
+          <p>+</p>
+        </div>
+        <div class="output">
+          <input type="text" placeholder="HASIL" id="output" />
+          <button type="submit" onclick="getSolver()">TEMUKAN SOLUSI</button>
+        </div>
+      </div>
+
+      <div class="all-solusi-wrapper"></div>
+    </main>
+
+    <script src="/assets/scripts/main.js"></script>
+    <script src="/assets/scripts/main-height.js"></script>
+  </body>
+</html>
