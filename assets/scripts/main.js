@@ -23,12 +23,20 @@ function generateCombinations(n) {
   return result;
 }
 
+function uppercase(string) {
+  let result = ''
+  for(char of string) {
+    result = result + char.toUpperCase()
+  }
+  return result
+}
+
 function getSolver() {
   const results = [];
 
-  const inputOne = document.getElementById("input-1").value;
-  const inputTwo = document.getElementById("input-2").value;
-  const output = document.getElementById("output").value;
+  const inputOne = uppercase(document.getElementById("input-1").value);
+  const inputTwo = uppercase(document.getElementById("input-2").value);
+  const output = uppercase(document.getElementById("output").value);
 
   if (!inputOne) {
     return;
